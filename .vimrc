@@ -39,10 +39,22 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'tomasr/molokai'
 ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
 
+"色設定の追加してみる
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
+
 call neobundle#end()
 
 filetype plugin indent on     " required!
 filetype indent on
 syntax on
+
+set background=dark
+if ($ft=='ruby')
+	colorscheme Tomorrow-Night
+else
+	colorscheme hybrid
+endif
+
 
 NeoBundleCheck
