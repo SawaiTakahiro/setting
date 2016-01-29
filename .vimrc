@@ -41,6 +41,7 @@ NeoBundle 'tomasr/molokai'
 
 "色設定の追加してみる
 NeoBundle 'w0ng/vim-hybrid'
+
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 call neobundle#end()
@@ -58,5 +59,9 @@ else
 endif
 
 set number
+
+set list "不可視文字を表示
+set listchars=tab:>-,trail:-	"タブ、半角スペースの表示
+
 
 NeoBundleCheck
