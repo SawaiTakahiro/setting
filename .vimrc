@@ -8,10 +8,10 @@ if has('vim_starting')
     set nocompatible               " Be iMproved
   endif
 
-  set runtimepath+=~/.vim/bundle/neobundle.vim
+  set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim
 endif
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
 
 " originalrepos on github
 NeoBundle 'Shougo/neobundle.vim'
